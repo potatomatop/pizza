@@ -11,7 +11,6 @@ public class Variable1 {
 		int age = 25;
 		double height = 148.5;
 		
-//		
 //		例）
 //		私の自己紹介をします。
 //		名前は山田太郎です。
