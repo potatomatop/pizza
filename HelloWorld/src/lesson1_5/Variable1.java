@@ -23,7 +23,6 @@ public class Variable1 {
 		System.out.println("名前は" + name + "です。");
 		System.out.println("性別は" +sex + "です。");
 		System.out.println("身長は" + height + "cmです。");
-		System.out.println("よろしくお願いします。");
-		
+		System.out.println("");
 	}
 }
