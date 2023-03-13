@@ -35,6 +35,5 @@ public class Variable2 {
 		
 		System.out.println("あなたの年齢を予想します。");
 		System.out.println("あなたの年齢はおそらく" + (int)Math.ceil(Math.random()*100) + "歳ですね？");
-
 	}
 }
