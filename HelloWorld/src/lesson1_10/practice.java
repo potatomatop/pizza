@@ -17,8 +17,8 @@ public class practice {
 
 	public static void main(String[] args) {
 		
-//		＋＋＋１から１０回で問題文の結果みたく３から始まるのか？
-		for(int i = 1; i < 10*2; i += 2) {
+//		1から10回だと問題文の結果のように3......21にはならないのでは...？
+		for(int i = 1; i <= 2*10; i += 2) {
 			System.out.println(i);
 		};
 	}
