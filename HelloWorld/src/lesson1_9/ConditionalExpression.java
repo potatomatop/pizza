@@ -4,9 +4,13 @@ public class ConditionalExpression {
 	public static void main(String[] args) {
 //		問１）
 //		boolean型変数 rain を宣言し、今日の天気が雨なら「true」雨でないなら「false」を代入して下さい。
-//		もし rain が true ならコンソールに「DVDを見ます。」と false なら「外で遊びます。」と表示して下さい。
+//		もし rain が true ならコンソールに「DVDを見ます。」と false なら「外で遊びます。」と表示して下さい。		
+		
+//		今日の天気は何を使って入れる？専用の関数があるのか？
+//		「晴れ」「曇り」などだと2文字以上なので、仮に入力させるとすればcharで宣言しておくとエラーになる？
+//		（＝Stringにしておくべき？）
 		boolean rain;
-		String weather = "雨";
+		String weather = "晴れ";
 		if(weather == "雨") {
 			rain = true;
 		} else {
@@ -25,7 +29,7 @@ public class ConditionalExpression {
 //		もし score が 40点以上、60点以下なら「〇〇さんは□□点です。もう少しでした。」、
 //		もし score が 60点以上、80点以下なら「〇〇さんは□□点です。よくできました。」、
 //		もし score が 80点以上なら「〇〇さんは□□点です。たいへんよくできました。」とコンソールに出力して下さい。
-		String name = "cat";
+		String name = "カービィ";
 		int score = (int)Math.ceil(Math.random()*100);
 		if(score <= 40) {
 			System.out.println(name + "さんは" + score + "点です。もう少し頑張りましょう。");
@@ -51,7 +55,7 @@ public class ConditionalExpression {
 			System.out.println("私は疲れています。");
 		}
 		
-		
+//		nullはどうすれば？ falseの場合に「null」を入れると「null」が文字で出力される。
 		System.out.println(isTired == 0? study + "を続けます。" : "");
 	}
 }
