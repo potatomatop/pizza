@@ -1,0 +1,34 @@
+/*
+	問題．while文を使用し、以下のプログラムを作成してください。
+		・1～100を出力
+		・奇数の数字に「〇は奇数です」と出力
+		・偶数の数字に「○は偶数です」と出力
+		  出力結果  1は奇数です
+					2は偶数です
+					3は奇数です
+					4は偶数です
+						・
+						・
+						・
+					100は偶数です
+*/
+package lesson1_12;
+
+public class practice {
+
+	public static void main(String[] args) {
+		int i = 1;
+		do {
+			System.out.print(i);
+			if(i % 2 != 0) {
+				System.out.println("は奇数です");
+			} else {
+				System.out.println("は偶数です");
+			}
+		i++;
+		}
+		while(i <= 100); 
+		
+	}
+
+}
