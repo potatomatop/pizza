@@ -7,7 +7,7 @@ public class Variable1 {
 //		※但し、「名前、性別、年齢、身長」は変数に代入して、出力するようにしてください。
 //		※性別は「男」か「女」の一文字、身長は小数点第一位までのかたちで表示されるようにして下さい。
 		String name = "島田莞奈";
-		String sex = "女";
+		char sex = '女';
 		int age = 25;
 		double height = 148.5;
 		
