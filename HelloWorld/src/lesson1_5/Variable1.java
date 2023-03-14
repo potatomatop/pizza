@@ -8,8 +8,8 @@ public class Variable1 {
 //		※性別は「男」か「女」の一文字、身長は小数点第一位までのかたちで表示されるようにして下さい。
 		String name = "島田莞奈";
 		char sex = '女';
-		int age = 25;
-		double height = 148.500;
+		byte age = 25;
+		float height = 148.572F;
 		
 //		例）
 //		私の自己紹介をします。
