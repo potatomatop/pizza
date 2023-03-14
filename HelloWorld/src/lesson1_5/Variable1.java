@@ -9,7 +9,7 @@ public class Variable1 {
 		String name = "島田莞奈";
 		char sex = '女';
 		int age = 25;
-		double height = 148.5;
+		double height = 148.500;
 		
 //		例）
 //		私の自己紹介をします。
@@ -22,7 +22,7 @@ public class Variable1 {
 		System.out.println("名前は" + name + "です。");
 		System.out.println("性別は" +sex + "です。");
 		System.out.println("年齢は" + age + "歳です。");
-		System.out.println("身長は" + height + "cmです。");
+		System.out.println("身長は" + String.format("%.1f", height) + "cmです。");
 		System.out.println("よろしくお願いします。");
 	}
 }
