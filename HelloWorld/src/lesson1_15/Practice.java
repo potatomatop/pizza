@@ -54,6 +54,11 @@ public class Practice {
 		int avg3 = 0;
 		
 		for(int i = 0; i < test.length; i++) {
+			System.out.print("生徒" + (i+1) + "：");
+			System.out.print("国語" + test[i][0] + "点、");
+			System.out.print("数学" + test[i][1] + "点、");
+			System.out.println("英語" + test[i][2] + "点");
+			
 			for(int x = 0; x < test.length-1; x++) {
 
 				if(x == 0) {
@@ -63,9 +68,10 @@ public class Practice {
 				} else {
 					avg3 += test[i][x];
 				}
+				
 			}
+			
 		}
-		
 		System.out.println("国語の平均点は" + avg1/test.length + "点です。");
 		System.out.println("数学の平均点は" + avg2/test.length + "点です。");
 		System.out.println("英語の平均点は" + avg3/test.length + "点です。");
