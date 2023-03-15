@@ -18,7 +18,8 @@ public class practice {
 	public static void main(String[] args) {
 		
 //		1から10回だと問題文の結果のように3......21にはならないのでは...？
-		for(int i = 1; i <= 2*10; i += 2) {
+//		ひとまずiの値が何であれ、2を10回足すようにしておく。
+		for(int i = 1, x = i; i <  x + 2*10; i += 2) {
 			System.out.println(i);
 		};
 	}
