@@ -29,7 +29,7 @@ public class Theme2 {
 		System.out.println(where.hello);
 		
 		//taste + genre
-		ToTheme2 what = new ToTheme2("");
+		ToTheme2 what = new ToTheme2("");	//何を？
 		System.out.println();
 		System.out.println();
 		
