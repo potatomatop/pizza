@@ -16,7 +16,6 @@ package lesson1_10;
 public class practice {
 
 	public static void main(String[] args) {
-		
 		int i = 1;
 		for(int x = 1; x <= 10; x++) {
 			i += 2;
