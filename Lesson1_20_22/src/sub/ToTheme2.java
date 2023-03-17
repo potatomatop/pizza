@@ -17,14 +17,34 @@
 
 package sub;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+
 public class ToTheme2 {
-	public String hello;
-	String food;
+	String a = "こんにちは！";
+	String b = "寿司";
 	
-	public ToTheme2(String a) {
-		hello = "こんにちは！ここは" + a + "です！";
-		
+	public void greeting() {
+		String a ="日本";
+		System.out.println(this.a + "ここは" + a + "です！");
+	}
+	
+	public void taste() {
+		String b = "うまい";
+		System.out.println("この" + this.b + "は" + b);
+	}
+	
+	public void genre() {
+		String b = "和食";
+		System.out.println(this.b + "は" + b + "です");
+	}
+
+	public void date() {
+		DateTime date = new DateTime();
+		System.out.println("今の現在日時は" + DateTimeFormat.forPattern("yyyy/MM/dd HH:mm:ss").print(date) + "です");
 	}
 	
 	
 }
+
+

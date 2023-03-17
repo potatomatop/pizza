@@ -16,26 +16,30 @@
   */
 
 package main;
-import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-
 import sub.ToTheme2;
 
 public class Theme2 {
 	
 	public static void main(String[] args) {
-		//where
-		ToTheme2 where = new ToTheme2("日本");
-		System.out.println(where.hello);
 		
-		//taste + genre
-		ToTheme2 what = new ToTheme2("");	//何を？
-		System.out.println();
-		System.out.println();
+		// コンストラクタ？の呼び出し？
+		ToTheme2 what = new ToTheme2();
+		
+		// greeting
+		what.greeting();
+
+		//taste
+		what.taste();
+		
+		//genre
+		what.genre();
+
 		
 		//date
-		DateTime date = new DateTime();
-		System.out.println(DateTimeFormat.forPattern("yyyy/MM/dd HH:mm:ss").print(date));
+		what.date();
+
 	}
+
+
 	
 }
