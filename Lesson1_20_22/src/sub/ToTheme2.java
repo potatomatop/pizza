@@ -25,18 +25,21 @@ public class ToTheme2 {
 	String b = "寿司";
 	
 	public void greeting() {
-		String a ="日本";
+		String a = "日本";
 		System.out.println(this.a + "ここは" + a + "です！");
+		check(a);
 	}
 	
 	public void taste() {
 		String b = "うまい";
 		System.out.println("この" + this.b + "は" + b);
+		check(b);
 	}
 	
 	public void genre() {
 		String b = "和食";
 		System.out.println(this.b + "は" + b + "です");
+		check(b);
 	}
 
 	public void date() {
@@ -44,6 +47,13 @@ public class ToTheme2 {
 		System.out.println("今の現在日時は" + DateTimeFormat.forPattern("yyyy/MM/dd HH:mm:ss").print(date) + "です");
 	}
 	
+	
+	public void check(String x) {
+		if(x == null) {
+			System.out.println("↑このローカルに文字はないよ！出直しな！");
+		} 
+		
+	}
 	
 }
 
