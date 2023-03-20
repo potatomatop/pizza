@@ -67,10 +67,10 @@ public class Method {
 	}
 
 //	Q6
-	public static int avg(int[] a) {
-		int x = 0;
-		int total = 0;
-		for(int b: a) {
+	public static float avg(int[] a) {
+		float x = 0;
+		float total = 0;
+		for(float b: a) {
 //			System.out.println(b);		//出力確認（配列の値）
 			total += b;
 		}
