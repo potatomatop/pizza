@@ -10,10 +10,12 @@ public class Dog {
 	// Q3：Q1で作成した変数に「犬」を代入するコンストラクタを作成してください。
 		public Dog() {
 			animalName = "犬";
+			return;
 		}
 	
 	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
 		public Dog(int a) {
 			animals = a;
+			return;
 		}
 }
