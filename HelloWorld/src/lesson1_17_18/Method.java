@@ -32,7 +32,9 @@ public class Method {
 	//     配列の要素の平均値を返すメソッド（関数）を作成してください。
 //		avg(rndm(5));							//関数（処理）のみ
 		
-		System.out.println(avg(rndm(5)));		//出力確認
+//		System.out.println(avg(rndm(5)));		//出力確認
+		
+		System.out.println(avg(4));
 	}
 	
 //	Q1
@@ -67,15 +69,29 @@ public class Method {
 	}
 
 //	Q6
-	public static float avg(int[] a) {
+//	public static float avg(int[] a) {
+//		float x = 0;
+//		float total = 0;
+//		for(float b: a) {
+////			System.out.println(b);		//出力確認（配列の値）
+//			total += b;
+//		}
+//		x = total/a.length;
+//		return x;
+//		
+//	}
+	
+	public static float avg(int a) {
+		int[] b;
+		b = rndm(a);
 		float x = 0;
 		float total = 0;
-		for(float b: a) {
-//			System.out.println(b);		//出力確認（配列の値）
-			total += b;
+		for(float c: b) {
+			System.out.println(c);		//出力確認（配列の値）
+			total += c;
 		}
-		x = total/a.length;
-		return x;
+		x = total/b.length;
 		
+		return x;
 	}
 }
