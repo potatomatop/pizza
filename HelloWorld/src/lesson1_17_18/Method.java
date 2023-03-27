@@ -30,11 +30,12 @@ public class Method {
 		
 	// Q6：Q5で作成した関数を用いて、このメソッド（関数）の引数をQ5のメソッド（関数）の引数に渡して
 	//     配列の要素の平均値を返すメソッド（関数）を作成してください。
-//		avg(rndm(5));							//関数（処理）のみ
+		
+		avg(b);							//関数（処理）のみ
 		
 //		System.out.println(avg(rndm(5)));		//出力確認
 		
-		System.out.println(avg(4));
+//		System.out.println(avg(4));
 	}
 	
 //	Q1
@@ -68,30 +69,45 @@ public class Method {
 		return y;
 	}
 
-//	Q6
+//	Q6 rndm()ごとぶち込んで平均を出す <------ 迷走１
 //	public static float avg(int[] a) {
 //		float x = 0;
 //		float total = 0;
 //		for(float b: a) {
-////			System.out.println(b);		//出力確認（配列の値）
+//			System.out.println(b);		//出力確認（配列の値）
 //			total += b;
 //		}
 //		x = total/a.length;
+//		System.out.println(x);
 //		return x;
 //		
 //	}
+//	Q6 この関数の「引数」をQ5の関数に入れて、配列の中身を全部足し、要素数で割る <------ 迷走２
+//	public static float avg(int a) {
+//		int[] b;
+//		b = rndm(a);
+//		float x = 0;
+//		float total = 0;
+//		for(float c: b) {
+//			System.out.println(c);		//出力確認（配列の値）
+//			total += c;
+//		}
+//		x = total/b.length;
+//		
+//		return x;
+//	}
 	
-	public static float avg(int a) {
-		int[] b;
-		b = rndm(a);
-		float x = 0;
-		float total = 0;
-		for(float c: b) {
-			System.out.println(c);		//出力確認（配列の値）
-			total += c;
-		}
-		x = total/b.length;
-		
-		return x;
+//	Q6 Q5を引数として受け取り、その平均を出す <------ ◎
+	public static float avg(int[] a) {
+	float x = 0;
+	float total = 0;
+	for(float b: a) {
+//		System.out.println(b);		//出力確認（配列の値）
+		total += b;
 	}
+	x = total/a.length;
+	System.out.println(x);			//出力確認（平均）
+	
+	return x;
+}	
 }
