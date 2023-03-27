@@ -109,5 +109,5 @@ public class Method {
 	System.out.println(x);			//出力確認（平均）
 	
 	return x;
-}	
+	}	
 }
