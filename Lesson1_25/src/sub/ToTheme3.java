@@ -25,75 +25,133 @@
 package sub;
 
 public class ToTheme3 {
-
-//	int rdm = (int)Math.ceil(Math.random()*1000);
-//	String hp = "HP";
-//	String mp = "MP";
-//	String atk = "攻撃力";
-//	String agi = "素早さ";
-//	String def = "防御力";
-	
-	
-//	public ToTheme3() {
-//		System.out.println();
-//	}
+	String hp;
+	String mp;
+	String atk;
+	String agi;
+	String def;
 
 	class parent {
-		int rdm = (int)Math.ceil(Math.random()*1000);
-		public parent(String statusName) {
-			System.out.println(statusName + "：" + rdm); 
+		String column = "：";
+		
+		public void part() {
+			int rdm = (int)Math.ceil(Math.random()*1000);
+			System.out.println(column + rdm); 
 		}
 		
 	}
 	
 	class HP extends parent {
-		int rdm = (int)Math.ceil(Math.random()*1000);
-		public HP() {
-			super("HP");
-			
+		public void part() {
+			setHP("HP");
+			int rdm = (int)Math.ceil(Math.random()*1000);
+			System.out.println(getHP() + super.column + rdm); 	
 		}
 		
 	}
 	
 	class MP extends parent {
-		int rdm = (int)Math.ceil(Math.random()*1000);
-		public MP() {
-			super("MP");
-			
+		public void part() {
+			setMP("MP");
+			int rdm = (int)Math.ceil(Math.random()*1000);
+			System.out.println(getMP() + super.column + rdm); 	
 		}
 		
 	}
 
 	class ATK extends parent {
-		int rdm = (int)Math.ceil(Math.random()*1000);
-		public ATK() {
-			super("攻撃力");
+		public void part() {
+			setATK("攻撃力");
+			int rdm = (int)Math.ceil(Math.random()*1000);
+			System.out.println(getATK() + super.column + rdm); 	
 		}
 
 	}
 	
 	class AGI extends parent {
-		int rdm = (int)Math.ceil(Math.random()*1000);
-		public AGI() {
-			super("素早さ");
+		public void part() {
+			setAGI("素早さ");
+			int rdm = (int)Math.ceil(Math.random()*1000);
+			System.out.println(getAGI() + super.column + rdm); 	
 		}
 	}
 	
 	class DEF extends parent {
-		int rdm = (int)Math.ceil(Math.random()*1000);
-		public DEF() {
-			super("防御力");
+		public void part() {
+			setDEF("防御力");
+			int rdm = (int)Math.ceil(Math.random()*1000);
+			System.out.println(getDEF() + super.column + rdm); 	
 		}
 	}
 
+	
+	// HPSetter
+	public void setHP(String power) {
+		this.hp = power;
+	}
+
+	// HPGetter
+	public String getHP() {
+		return hp;
+	}
+	
+	// MPSetter
+	public void setMP(String power) {
+		this.mp = power;
+	}
+
+	// MPGetter
+	public String getMP() {
+		return mp;
+	}
+	
+	// ATKSetter
+	public void setATK(String power) {
+		this.atk = power;
+	}
+
+	// ATKGetter
+	public String getATK() {
+		return atk;
+	}
+	
+	// AGISetter
+	public void setAGI(String power) {
+		this.agi = power;
+	}
+
+	// AGIGetter
+	public String getAGI() {
+		return agi;
+	}
+	
+	// DEFSetter
+	public void setDEF(String power) {
+		this.def = power;
+	}
+
+	// HPGetter
+	public String getDEF() {
+		return def;
+	}
+	
+	
 	// 表示用集約
 	public void pass() {
+		HP hp = new HP();
+		hp.part();
 		
-		new HP();
-		new MP();
-		new ATK();
-		new AGI();
-		new DEF();
+		MP mp = new MP();
+		mp.part();
+		
+		ATK atk = new ATK();
+		atk.part();
+		
+		AGI agi = new AGI();
+		agi.part();
+		
+		DEF def = new DEF();
+		def.part();
 	}
 } 
 
