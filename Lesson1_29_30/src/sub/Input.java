@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class input {
+public class Input {
 	
 	// コンソールに入力受付＋nullチェック
 	public ArrayList<String> inputConsole() {

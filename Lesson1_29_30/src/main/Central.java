@@ -39,13 +39,13 @@
 
 package main;
 
-import sub.placeData;
+import sub.PlaceData;
 
-public class central {
+public class Central {
 
 	public static void main(String[] args) {
 		
-		new placeData();
+		new PlaceData();
 	
 	}
 

@@ -1,6 +1,6 @@
 package sub;
 
-public class placeData {
+public class PlaceData {
 	
 	// 地域のデータを配列placesに格納
 	protected String places[] = {
@@ -18,12 +18,12 @@ public class placeData {
 		};
 	// setter・getter用変数
 	int place = 0;
-	input ipt = new input();
+	Input ipt = new Input();
 	
 	
 	// 入力された値をString型からint型に変換し、
 	// 対応するインデックス番号の配列要素に対して処理をする
-	public placeData() {
+	public PlaceData() {
 		
 		// 配列inputData（入力した数字たち）の値を１つずつ全部拾い、
 		// 対応する配列placesのデータを読み込む
@@ -35,7 +35,7 @@ public class placeData {
 			if(0 <= areaNum || areaNum <= 10) {
 				setPlace(areaNum);
 				// customDataに引数としてplaces[place]を渡す <----- String型
-				new customData(getPlace());
+				new CustomData(getPlace());
 			} else {
 				break;
 			}

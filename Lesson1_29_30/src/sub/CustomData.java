@@ -1,9 +1,9 @@
 package sub;
 
-public class customData {
+public class CustomData {
 	
 	// 受け取った引数placeを３つに切り分けて表示する
-	public customData(String place) {
+	public CustomData(String place) {
 		
 		// placeを「:」で３つに切り分け、配列eachに格納
 		String[] each = null;
