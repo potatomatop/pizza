@@ -13,4 +13,4 @@ class Main {
 		  
 		person1.print();
 	  }
-	}
+}
