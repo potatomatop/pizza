@@ -29,4 +29,4 @@ class Main {
 		  person1.buy(car);
 		  person2.buy(bicycle);
 	  }
-	}
+}
