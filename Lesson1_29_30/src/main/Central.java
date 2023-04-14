@@ -44,7 +44,7 @@ import sub.PlaceData;
 public class Central {
 
 	public static void main(String[] args) {
-		
+		// PlaceDataの呼び出し
 		new PlaceData();
 	
 	}

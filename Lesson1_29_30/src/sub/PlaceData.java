@@ -18,6 +18,7 @@ public class PlaceData {
 		};
 	// setter・getter用変数
 	int place = 0;
+	// Inputクラス呼び出し
 	Input ipt = new Input();
 	
 	
@@ -33,10 +34,12 @@ public class PlaceData {
 			
 			// areaNum（コンソールに入力された値）が0～10に収まっているかチェック
 			if(0 <= areaNum || areaNum <= 10) {
+				// setterに値（0～10）を渡す
 				setPlace(areaNum);
 				// customDataに引数としてplaces[place]を渡す <----- String型
 				new CustomData(getPlace());
 			} else {
+				// 0～10でない値なら処理終了
 				break;
 			}
 			
